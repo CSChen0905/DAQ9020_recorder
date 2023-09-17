@@ -1,0 +1,10 @@
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\DAQ9020_recorder.exe.config
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\DAQ9020_recorder.exe
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\DAQ9020_recorder.pdb
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\NationalInstruments.DAQmx.dll
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\NationalInstruments.Common.dll
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\NationalInstruments.DAQmx.xml
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\bin\Debug\NationalInstruments.Common.xml
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\obj\Debug\DAQ9020_recorder.csprojResolveAssemblyReference.cache
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\obj\Debug\DAQ9020_recorder.exe
+d:\users\chihshian\documents\visual studio 2015\Projects\DAQ9020_recorder\DAQ9020_recorder\obj\Debug\DAQ9020_recorder.pdb
