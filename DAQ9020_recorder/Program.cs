@@ -45,7 +45,7 @@ namespace DAQ9020_recorder
                 if (daq.setupChannels())
                     daq.startDAQ();
                 else
-                    Console.WriteLine("ERROR：啟動失敗");
+                    Console.WriteLine("ERROR：Initialize Failed.");
             }
         }
 
@@ -77,8 +77,8 @@ namespace DAQ9020_recorder
                 daqDevice.Dispose();
                 if (m_numChs==0)
                 {
-                    daq_name = "Not Found a Daq";
-                    myLog("Not Found a Daq");
+                    daq_name = "Daq Devices Not Found";
+                    myLog("Daq Devices Not Found");
                     return false;
                 }else
                 {
@@ -168,7 +168,7 @@ namespace DAQ9020_recorder
 
                 if (m_stopDaq)
                     break;
-                IAsyncResult handle = daqReader.BeginReadMultiSample(m_numData, OnDataReady, null); // 使用非同步方式
+                IAsyncResult handle = daqReader.BeginReadMultiSample(m_numData, OnDataReady, null); // Async
                 Thread.Sleep(500);
             }
 
@@ -196,7 +196,7 @@ namespace DAQ9020_recorder
 
                 //stopWatch.Reset();
                 //stopWatch.Start();
-                //改用新的輸出檔案方式, 比迴圈方式快60%
+                //new way to write data, improve 60% compared to for loop.
                 var daqData_t = Transpose(daqData);
                 var byteBuffer = getBytes(daqData_t);
                 m_write2File.Write(byteBuffer);
@@ -262,7 +262,7 @@ namespace DAQ9020_recorder
             int month = m_now.Month;
             int day = m_now.Day;
             //string path = $@"{root_path}{year}\";
-            string path = $@"{root_path}{year}\{month:00}\{day:00}\"; //補0
+            string path = $@"{root_path}{year}\{month:00}\{day:00}\"; //add 0
             while (!Directory.Exists(path))
             {
                 DirectoryInfo di = Directory.CreateDirectory(path);
